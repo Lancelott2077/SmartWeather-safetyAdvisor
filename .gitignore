@@ -9,6 +9,7 @@
 *.htm
 *.lnp
 *.sct
+*.hex
 Objects/
 Listings/
 DebugConfig/
