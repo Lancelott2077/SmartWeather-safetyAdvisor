@@ -1,0 +1,28 @@
+# Keil build output
+*.o
+*.d
+*.axf
+*.crf
+*.dep
+*.lst
+*.map
+*.htm
+*.lnp
+*.sct
+Objects/
+Listings/
+DebugConfig/
+RTE/
+*.uvguix.*
+
+# Secrets and local config
+.env
+secrets.h
+credentials*
+settings.js
+flows_cred.json
+
+# OS and editor
+Thumbs.db
+.DS_Store
+.vscode/
