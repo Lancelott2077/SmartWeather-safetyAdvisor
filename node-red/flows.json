@@ -1,0 +1,1241 @@
+[
+    {
+        "id": "3a48fc6785d53ace",
+        "type": "tab",
+        "label": "01-Simulated Sensor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9010c869bc795c1f",
+        "type": "tab",
+        "label": "02-WeatherApi",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "412a7232d4f06e29",
+        "type": "tab",
+        "label": "03-Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f688fd30fb91a28d",
+        "type": "tab",
+        "label": "04 -Comparison Engine",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cbd48d2dfea25fb5",
+        "type": "tab",
+        "label": "05-Alert Configuration",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e96e6538bfa785bb",
+        "type": "tab",
+        "label": "06-Recommendations",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a64b0ff1bebf257d",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "1149cdaea6f12fdb",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#fcfcfd",
+            "primary": "#0d74ce",
+            "bgPage": "#f9f9fb",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9e0"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "7a08a865a43aec86",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "a64b0ff1bebf257d",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "1149cdaea6f12fdb",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "tabs": [],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "852505586620837a",
+        "type": "ui-group",
+        "name": "Local sensor",
+        "page": "7a08a865a43aec86",
+        "width": "4",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "4b37c1e933f33739",
+        "type": "ui-group",
+        "name": "OpenWeather now",
+        "page": "7a08a865a43aec86",
+        "width": "4",
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "b2e7255019424769",
+        "type": "ui-group",
+        "name": "Forecast next 24 h",
+        "page": "7a08a865a43aec86",
+        "width": "4",
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "9ca6faca6b443124",
+        "type": "ui-group",
+        "name": "Microclimate mismatch",
+        "page": "7a08a865a43aec86",
+        "width": "12",
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "900076f496d2fdf1",
+        "type": "ui-group",
+        "name": "Alert settings",
+        "page": "7a08a865a43aec86",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "3deb4ee8332fb389",
+        "type": "ui-group",
+        "name": "Active settings",
+        "page": "7a08a865a43aec86",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "8f13d50ac9bd99da",
+        "type": "ui-group",
+        "name": "Recommendations",
+        "page": "7a08a865a43aec86",
+        "width": "12",
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "0f853d426d61c113",
+        "type": "inject",
+        "z": "3a48fc6785d53ace",
+        "name": "Every 5s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 640,
+        "y": 380,
+        "wires": [
+            [
+                "366e8c69f91710cf"
+            ]
+        ]
+    },
+    {
+        "id": "366e8c69f91710cf",
+        "type": "function",
+        "z": "3a48fc6785d53ace",
+        "name": "Generate Reading",
+        "func": "// 01 - Simulated Sensor: one normalised reading per message\nlet s = context.get('sim') || { t: 32.4, h: 71.0, p: 1008.6 };\n\nfunction walk(v, step, min, max) {\n    v += (Math.random() - 0.5) * 2 * step;\n    return Math.min(max, Math.max(min, v));\n}\n\ns.t = walk(s.t, 0.3, 20, 45);\ns.h = walk(s.h, 1.0, 30, 95);\ns.p = walk(s.p, 0.2, 990, 1020);\ncontext.set('sim', s);\n\nmsg.payload = {\n    device_id: \"weather_node_01\",\n    temperature: Math.round(s.t * 10) / 10,\n    humidity: Math.round(s.h * 10) / 10,\n    pressure: Math.round(s.p * 10) / 10,\n    pressure_type: \"station\",\n    timestamp: new Date().toISOString(),\n    source: \"simulated\"\n};\nglobal.set(\"sensor_latest\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 580,
+        "wires": [
+            [
+                "955979666709f718"
+            ]
+        ]
+    },
+    {
+        "id": "955979666709f718",
+        "type": "debug",
+        "z": "3a48fc6785d53ace",
+        "name": "Sim reading",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "eac0791416df237f",
+        "type": "inject",
+        "z": "9010c869bc795c1f",
+        "name": "Every 10min",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 260,
+        "wires": [
+            [
+                "d85bbc5c02fbba24"
+            ]
+        ]
+    },
+    {
+        "id": "d85bbc5c02fbba24",
+        "type": "function",
+        "z": "9010c869bc795c1f",
+        "name": "Build request",
+        "func": "const key = env.get(\"OWM_API_KEY\");\nconst lat = env.get(\"WX_LAT\");\nconst lon = env.get(\"WX_LON\");\n\nif (!key || !lat || !lon) {\n    msg.payload = {\n        source: \"openweathermap\",\n        ok: false,\n        error: \"Missing OWM_API_KEY, WX_LAT or WX_LON environment variable\",\n        fetched_at: new Date().toISOString()\n    };\n    return [null, msg];\n}\n\nmsg.url = \"https://api.openweathermap.org/data/2.5/weather?lat=\" + encodeURIComponent(lat) +\n    \"&lon=\" + encodeURIComponent(lon) +\n    \"&units=metric&appid=\" + encodeURIComponent(key);\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "84fb03db4feaede0"
+            ],
+            [
+                "d6507660e8258b3b"
+            ]
+        ]
+    },
+    {
+        "id": "84fb03db4feaede0",
+        "type": "http request",
+        "z": "9010c869bc795c1f",
+        "name": "OpenWeather Current",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 580,
+        "y": 240,
+        "wires": [
+            [
+                "ea34b87f2ada0289"
+            ]
+        ]
+    },
+    {
+        "id": "ea34b87f2ada0289",
+        "type": "function",
+        "z": "9010c869bc795c1f",
+        "name": "Normalise Api",
+        "func": "const now = new Date().toISOString();\nconst fail = (why) => {\n    msg.payload = { source: \"openweathermap\", ok: false, error: why, fetched_at: now };\n    global.set(\"api_latest\", msg.payload);\n    return msg;\n};\n\nif (msg.error) return fail(\"Request error: \" + (msg.error.message || \"unknown\"));\nif (msg.statusCode !== 200) return fail(\"HTTP \" + msg.statusCode);\n\nconst d = msg.payload;\nif (!d || !d.main || typeof d.main.temp !== \"number\" || typeof d.main.humidity !== \"number\") {\n    return fail(\"Unexpected response shape\");\n}\n\nmsg.payload = {\n    source: \"openweathermap\",\n    ok: true,\n    location_name: d.name || null,\n    temperature: d.main.temp,\n    humidity: d.main.humidity,\n    pressure_msl: d.main.pressure,\n    pressure_ground: (typeof d.main.grnd_level === \"number\") ? d.main.grnd_level : null,\n    observed_at: new Date(d.dt * 1000).toISOString(),\n    fetched_at: now\n};\nglobal.set(\"api_latest\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 320,
+        "wires": [
+            [
+                "d6507660e8258b3b"
+            ]
+        ]
+    },
+    {
+        "id": "d6507660e8258b3b",
+        "type": "debug",
+        "z": "9010c869bc795c1f",
+        "name": "API result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "3b894bc441b3689e",
+        "type": "catch",
+        "z": "9010c869bc795c1f",
+        "name": "",
+        "scope": [
+            "84fb03db4feaede0"
+        ],
+        "uncaught": false,
+        "x": 870,
+        "y": 400,
+        "wires": [
+            [
+                "ea34b87f2ada0289"
+            ]
+        ]
+    },
+    {
+        "id": "8aec429491c7366e",
+        "type": "inject",
+        "z": "9010c869bc795c1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "feeb65a2286e0a46"
+            ]
+        ]
+    },
+    {
+        "id": "feeb65a2286e0a46",
+        "type": "function",
+        "z": "9010c869bc795c1f",
+        "name": "function 1",
+        "func": "msg.payload = {\n    lat: env.get(\"WX_LAT\"),\n    lon: env.get(\"WX_LON\"),\n    key_length: (env.get(\"OWM_API_KEY\") || \"\").length,\n    os_check: env.get(\"USERPROFILE\")\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 540,
+        "wires": [
+            [
+                "ece62c76022e4693"
+            ]
+        ]
+    },
+    {
+        "id": "ece62c76022e4693",
+        "type": "debug",
+        "z": "9010c869bc795c1f",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "96cfe24e4cf76b0b",
+        "type": "inject",
+        "z": "9010c869bc795c1f",
+        "name": "Forecast every 30 min",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "3",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 680,
+        "wires": [
+            [
+                "1f321ae70a143e66"
+            ]
+        ]
+    },
+    {
+        "id": "1f321ae70a143e66",
+        "type": "function",
+        "z": "9010c869bc795c1f",
+        "name": "Build forecast request",
+        "func": "const key = env.get(\"OWM_API_KEY\");\nconst lat = env.get(\"WX_LAT\");\nconst lon = env.get(\"WX_LON\");\n\nif (!key || !lat || !lon) {\n    msg.payload = {\n        source: \"openweathermap_forecast\",\n        ok: false,\n        error: \"Missing OWM_API_KEY, WX_LAT or WX_LON environment variable\",\n        fetched_at: new Date().toISOString()\n    };\n    return [null, msg];\n}\n\nmsg.url = \"https://api.openweathermap.org/data/2.5/forecast?lat=\" + encodeURIComponent(lat) +\n    \"&lon=\" + encodeURIComponent(lon) +\n    \"&units=metric&cnt=8&appid=\" + encodeURIComponent(key);\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 760,
+        "wires": [
+            [
+                "ff923f87f04d64a2"
+            ],
+            [
+                "a422ce5b5db085ec"
+            ]
+        ]
+    },
+    {
+        "id": "ff923f87f04d64a2",
+        "type": "http request",
+        "z": "9010c869bc795c1f",
+        "name": "OpenWeather forecast",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 520,
+        "y": 680,
+        "wires": [
+            [
+                "d9e0b2abb17fb1a2"
+            ]
+        ]
+    },
+    {
+        "id": "d9e0b2abb17fb1a2",
+        "type": "function",
+        "z": "9010c869bc795c1f",
+        "name": "Normalise forecast",
+        "func": "const now = new Date().toISOString();\nconst fail = (why) => {\n    msg.payload = { source: \"openweathermap_forecast\", ok: false, error: why, fetched_at: now };\n    global.set(\"forecast_latest\", msg.payload);\n    return msg;\n};\n\nif (msg.error) return fail(\"Request error: \" + (msg.error.message || \"unknown\"));\nif (msg.statusCode !== 200) return fail(\"HTTP \" + msg.statusCode);\n\nconst d = msg.payload;\nif (!d || !Array.isArray(d.list) || d.list.length === 0) return fail(\"Unexpected response shape\");\n\nconst steps = d.list.map(e => ({\n    time: new Date(e.dt * 1000).toISOString(),\n    temperature: (e.main && typeof e.main.temp === \"number\") ? e.main.temp : null,\n    humidity: (e.main && typeof e.main.humidity === \"number\") ? e.main.humidity : null,\n    rain_probability_pct: (typeof e.pop === \"number\") ? Math.round(e.pop * 100) : null,\n    rain_3h_mm: (e.rain && typeof e.rain[\"3h\"] === \"number\") ? e.rain[\"3h\"] : 0\n}));\n\nconst pops = steps.map(s => s.rain_probability_pct).filter(v => v !== null);\n\nmsg.payload = {\n    source: \"openweathermap_forecast\",\n    ok: true,\n    steps: steps,\n    max_rain_probability_pct: pops.length ? Math.max(...pops) : null,\n    total_rain_mm: Math.round(steps.reduce((a, s) => a + s.rain_3h_mm, 0) * 100) / 100,\n    fetched_at: now\n};\nglobal.set(\"forecast_latest\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 700,
+        "wires": [
+            [
+                "a422ce5b5db085ec"
+            ]
+        ]
+    },
+    {
+        "id": "a422ce5b5db085ec",
+        "type": "debug",
+        "z": "9010c869bc795c1f",
+        "name": "Forecast result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "55d7dc4b7a50bcca",
+        "type": "catch",
+        "z": "9010c869bc795c1f",
+        "name": "",
+        "scope": [
+            "ff923f87f04d64a2"
+        ],
+        "uncaught": false,
+        "x": 810,
+        "y": 620,
+        "wires": [
+            [
+                "d9e0b2abb17fb1a2"
+            ]
+        ]
+    },
+    {
+        "id": "d78810c60bd97304",
+        "type": "inject",
+        "z": "412a7232d4f06e29",
+        "name": "Refresh every 5 s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "4dd7da5aad85b40f"
+            ]
+        ]
+    },
+    {
+        "id": "4dd7da5aad85b40f",
+        "type": "function",
+        "z": "412a7232d4f06e29",
+        "name": "Build display",
+        "func": "const s = global.get(\"sensor_latest\");\nconst a = global.get(\"api_latest\");\nconst f = global.get(\"forecast_latest\");\nconst now = Date.now();\n\nconst num = (v, d) => (typeof v === \"number\") ? v.toFixed(d) : \"n/a\";\nconst age = (iso) => {\n    if (!iso) return \"no data\";\n    const t = new Date(iso);\n    const sec = Math.max(0, Math.round((now - t.getTime()) / 1000));\n    const ago = sec < 90 ? sec + \" s ago\" : Math.round(sec / 60) + \" min ago\";\n    return t.toLocaleTimeString(\"en-GB\") + \" (\" + ago + \")\";\n};\n\nconst local = s ? {\n    rows: [\n        [\"Source\", s.source],\n        [\"Temperature\", num(s.temperature, 1) + \" °C\"],\n        [\"Humidity\", num(s.humidity, 0) + \" %\"],\n        [\"Pressure (station)\", num(s.pressure, 1) + \" hPa\"],\n        [\"Updated\", age(s.timestamp)]\n    ]\n} : { rows: [[\"Status\", \"No sensor data yet\"]] };\n\nlet weather;\nif (!a) {\n    weather = { rows: [[\"Status\", \"No API data yet\"]] };\n} else if (!a.ok) {\n    weather = { rows: [[\"Status\", \"API ERROR: \" + a.error], [\"Attempted\", age(a.fetched_at)]] };\n} else {\n    weather = {\n        rows: [\n            [\"Location\", a.location_name || \"n/a\"],\n            [\"Temperature\", num(a.temperature, 1) + \" °C\"],\n            [\"Humidity\", num(a.humidity, 0) + \" %\"],\n            [\"Pressure (ground)\", num(a.pressure_ground, 0) + \" hPa\"],\n            [\"Observed\", age(a.observed_at)]\n        ]\n    };\n}\n\nlet fc;\nif (!f) {\n    fc = { rows: [[\"Status\", \"No forecast data yet\"]] };\n} else if (!f.ok) {\n    fc = { rows: [[\"Status\", \"API ERROR: \" + f.error], [\"Attempted\", age(f.fetched_at)]] };\n} else {\n    fc = {\n        rows: [\n            [\"Max rain chance\", f.max_rain_probability_pct + \" %\"],\n            [\"Expected rain\", f.total_rain_mm + \" mm\"],\n            [\"Fetched\", age(f.fetched_at)]\n        ]\n    };\n}\n\nconst c = global.get(\"comparison_latest\");\nconst sgn = (v, d) => (v > 0 ? \"+\" : \"\") + v.toFixed(d);\nlet cmp;\nif (!c) {\n    cmp = { status: \"WAITING\", rows: [[\"\", \"No comparison result yet.\"]] };\n} else if (now - new Date(c.evaluated_at).getTime() > 30000) {\n    cmp = { status: \"STALE\", rows: [[\"\", \"The comparison has stopped updating, so these values may be outdated.\"]] };\n} else {\n    const rows = [];\n    const t = c.temperature, h = c.humidity;\n    if (t) rows.push([\"Temperature\", t.sensor.toFixed(1) + \" °C (sensor) vs \" + t.api.toFixed(1) +\n        \" °C (API) = \" + sgn(t.delta, 1) + \" °C (threshold ±\" + t.threshold + \" °C)\"]);\n    if (h && !h.skipped) rows.push([\"Humidity\", h.sensor.toFixed(0) + \" % (sensor) vs \" + h.api.toFixed(0) +\n        \" % (API) = \" + sgn(h.delta, 1) + \" percentage points (threshold ±\" + h.threshold + \")\"]);\n    else if (h && h.skipped) rows.push([\"Humidity\", \"not compared: \" + h.reason]);\n    c.messages.forEach((m) => rows.push([\"\", m]));\n    rows.push([\"Evaluated\", age(c.evaluated_at)]);\n    cmp = { status: c.status, rows: rows };\n}\n\nreturn [{ payload: local }, { payload: weather }, { payload: fc }, { payload: cmp }];",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 340,
+        "wires": [
+            [
+                "f7215d807accbfe5"
+            ],
+            [
+                "933198807209f49d"
+            ],
+            [
+                "62fac71bf4e3cb84"
+            ],
+            [
+                "888f6065f57ff421"
+            ]
+        ]
+    },
+    {
+        "id": "f7215d807accbfe5",
+        "type": "ui-template",
+        "z": "412a7232d4f06e29",
+        "group": "852505586620837a",
+        "page": "",
+        "ui": "",
+        "name": "Local Sensor",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div v-if=\"msg && msg.payload\">\n        <div v-for=\"row in msg.payload.rows\" :key=\"row[0]\">\n            <b>{{ row[0] }}:</b> {{ row[1] }}\n        </div>\n    </div>\n    <div v-else>Waiting for data…</div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "933198807209f49d",
+        "type": "ui-template",
+        "z": "412a7232d4f06e29",
+        "group": "4b37c1e933f33739",
+        "page": "",
+        "ui": "",
+        "name": "OpenWeather now",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div v-if=\"msg && msg.payload\">\n        <div v-for=\"row in msg.payload.rows\" :key=\"row[0]\">\n            <b>{{ row[0] }}:</b> {{ row[1] }}\n        </div>\n    </div>\n    <div v-else>Waiting for data…</div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62fac71bf4e3cb84",
+        "type": "ui-template",
+        "z": "412a7232d4f06e29",
+        "group": "b2e7255019424769",
+        "page": "",
+        "ui": "",
+        "name": "Forecast next 24 h",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div v-if=\"msg && msg.payload\">\n        <div v-for=\"row in msg.payload.rows\" :key=\"row[0]\">\n            <b>{{ row[0] }}:</b> {{ row[1] }}\n        </div>\n    </div>\n    <div v-else>Waiting for data…</div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "888f6065f57ff421",
+        "type": "ui-template",
+        "z": "412a7232d4f06e29",
+        "group": "9ca6faca6b443124",
+        "page": "",
+        "ui": "",
+        "name": "Microclimate mismatch",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div v-if=\"msg && msg.payload\">\n        <div :style=\"{ fontWeight: 'bold', fontSize: '1.2em',\n         color: msg.payload.status === 'MISMATCH' ? '#b45309' :\n                (msg.payload.status === 'OK' ? '#15803d' : '#6b7280') }\">\n            Status: {{ msg.payload.status }}\n        </div>\n        <div v-for=\"(row, i) in msg.payload.rows\" :key=\"i\">\n            <b v-if=\"row[0]\">{{ row[0] }}:</b> {{ row[1] }}\n        </div>\n    </div>\n    <div v-else>Waiting for data…</div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc0e9872f9c02e33",
+        "type": "inject",
+        "z": "f688fd30fb91a28d",
+        "name": "Compare real data",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "613874059da42907"
+            ]
+        ]
+    },
+    {
+        "id": "613874059da42907",
+        "type": "function",
+        "z": "f688fd30fb91a28d",
+        "name": "Compare engine",
+        "func": "// 04 - Comparison Engine: sensor vs API. Pressure is intentionally not compared.\nconst cfg = Object.assign({\n    temp_threshold_c: 3,\n    humidity_threshold_pct: 10,\n    sensor_stale_s: 60,\n    api_fetch_stale_s: 1800,\n    api_obs_stale_s: 3600,\n    compare_humidity: true\n}, global.get(\"config\") || {});\n\nconst isTest = !!msg.test;\nconst s = isTest ? msg.test.sensor : global.get(\"sensor_latest\");\nconst a = isTest ? msg.test.api : global.get(\"api_latest\");\nconst nowMs = Date.now();\n\nconst ageS = (iso) => iso ? Math.round((nowMs - new Date(iso).getTime()) / 1000) : null;\nconst okNum = (v, lo, hi) => typeof v === \"number\" && isFinite(v) && v >= lo && v <= hi;\nconst r1 = (v) => Math.round(v * 10) / 10;\n\nconst result = {\n    status: \"NO_COMPARISON\",\n    messages: [],\n    temperature: null,\n    humidity: null,\n    sensor_age_s: s ? ageS(s.timestamp) : null,\n    api_fetch_age_s: a ? ageS(a.fetched_at) : null,\n    api_obs_age_s: (a && a.ok) ? ageS(a.observed_at) : null,\n    config: cfg,\n    evaluated_at: new Date(nowMs).toISOString()\n};\nif (isTest) result.test_name = msg.test.name;\n\nconst problems = [];\nif (!s) problems.push(\"No sensor data yet.\");\nelse if (result.sensor_age_s === null) problems.push(\"Sensor reading has no valid timestamp.\");\nelse if (result.sensor_age_s > cfg.sensor_stale_s) problems.push(\"Sensor data is stale (\" + result.sensor_age_s + \" s old).\");\nelse if (!okNum(s.temperature, -40, 85)) problems.push(\"Sensor temperature is missing or out of range.\");\n\nif (!a) problems.push(\"No weather API data yet.\");\nelse if (!a.ok) problems.push(\"Weather API unavailable: \" + a.error);\nelse if (result.api_fetch_age_s === null || result.api_fetch_age_s > cfg.api_fetch_stale_s) problems.push(\"Weather API data has not been refreshed recently.\");\nelse if (result.api_obs_age_s === null || result.api_obs_age_s > cfg.api_obs_stale_s) problems.push(\"Weather API observation is old (\" + result.api_obs_age_s + \" s).\");\nelse if (!okNum(a.temperature, -60, 60)) problems.push(\"API temperature is missing or out of range.\");\n\nif (problems.length) {\n    result.messages = problems;\n} else {\n    const dT = r1(s.temperature - a.temperature);\n    result.temperature = {\n        sensor: s.temperature, api: a.temperature, delta: dT, unit: \"°C\",\n        threshold: cfg.temp_threshold_c, exceeded: Math.abs(dT) >= cfg.temp_threshold_c\n    };\n\n    if (cfg.compare_humidity && okNum(s.humidity, 0, 100) && okNum(a.humidity, 0, 100)) {\n        const dH = r1(s.humidity - a.humidity);\n        result.humidity = {\n            sensor: s.humidity, api: a.humidity, delta: dH, unit: \"percentage points\",\n            threshold: cfg.humidity_threshold_pct, exceeded: Math.abs(dH) >= cfg.humidity_threshold_pct\n        };\n    } else {\n        result.humidity = { skipped: true, reason: cfg.compare_humidity ? \"Humidity value missing or invalid.\" : \"Humidity comparison disabled in config.\" };\n    }\n\n    const t = result.temperature, h = result.humidity;\n    if (t.exceeded) {\n        result.messages.push(\"The local sensor reports \" + t.sensor.toFixed(1) + \"°C, while the weather service reports \" +\n            t.api.toFixed(1) + \"°C. The local environment is \" + Math.abs(t.delta).toFixed(1) + \"°C \" +\n            (t.delta > 0 ? \"warmer\" : \"cooler\") + \" than the reported conditions. This may be due to sensor placement \" +\n            \"(indoors, direct sunlight, nearby heat sources), measurement location, timing, or calibration differences.\");\n    }\n    if (h && !h.skipped && h.exceeded) {\n        result.messages.push(\"Local relative humidity is \" + h.sensor.toFixed(0) + \"%, versus \" + h.api.toFixed(0) +\n            \"% reported: \" + Math.abs(h.delta).toFixed(0) + \" percentage points \" + (h.delta > 0 ? \"higher\" : \"lower\") +\n            \". Humidity varies strongly with sensor placement and temperature, so a difference does not by itself indicate a fault.\");\n    }\n\n    if (result.messages.length) {\n        result.status = \"MISMATCH\";\n    } else {\n        result.status = \"OK\";\n        result.messages.push(\"No significant mismatch detected under the configured thresholds.\");\n    }\n}\n\nif (!isTest) global.set(\"comparison_latest\", result);\nmsg.payload = result;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "3a5c36d4c97deefd"
+            ]
+        ]
+    },
+    {
+        "id": "4ded6c2829e06ab2",
+        "type": "function",
+        "z": "f688fd30fb91a28d",
+        "name": "Make test case",
+        "func": "\n// name, sensor [temp, humidity], api [temp, humidity], optional sensor age in seconds\nconst cases = [\n    { name: \"Sensor warmer (+4.5 C)\", s: [34.0, 71], a: [29.5, 72] },\n    { name: \"Sensor cooler (-4.0 C)\", s: [26.0, 72], a: [30.0, 71] },\n    { name: \"Sensor more humid (+15 pp)\", s: [30.0, 85], a: [29.5, 70] },\n    { name: \"No mismatch\", s: [30.0, 70], a: [29.5, 72] },\n    { name: \"Stale sensor (600 s old)\", s: [30.0, 70], a: [29.5, 72], age: 600 }\n];\nconst n = context.get(\"n\") || 0;\nconst c = cases[n % cases.length];\ncontext.set(\"n\", n + 1);\n\nconst nowMs = Date.now();\nconst nowIso = new Date(nowMs).toISOString();\nmsg.test = {\n    name: c.name,\n    sensor: { temperature: c.s[0], humidity: c.s[1], timestamp: new Date(nowMs - (c.age || 0) * 1000).toISOString() },\n    api: { ok: true, temperature: c.a[0], humidity: c.a[1], observed_at: nowIso, fetched_at: nowIso }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 400,
+        "wires": [
+            [
+                "613874059da42907"
+            ]
+        ]
+    },
+    {
+        "id": "3a5c36d4c97deefd",
+        "type": "debug",
+        "z": "f688fd30fb91a28d",
+        "name": "Comparison",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6b8d6639b5105218",
+        "type": "inject",
+        "z": "f688fd30fb91a28d",
+        "name": "Run next test case",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "4ded6c2829e06ab2"
+            ]
+        ]
+    },
+    {
+        "id": "500caf5d6c0129e6",
+        "type": "ui-form",
+        "z": "cbd48d2dfea25fb5",
+        "name": "Threshold settings",
+        "group": "900076f496d2fdf1",
+        "label": "Edit thresholds",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Temperature threshold (°C)",
+                "key": "temp_threshold_c",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Humidity threshold (percentage points)",
+                "key": "humidity_threshold_pct",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sensor stale limit (s)",
+                "key": "sensor_stale_s",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "temp_threshold_c": "",
+            "humidity_threshold_pct": "",
+            "sensor_stale_s": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "clear",
+        "resetOnSubmit": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "passthru": false,
+        "dropdownOptions": [],
+        "x": 210,
+        "y": 280,
+        "wires": [
+            [
+                "154214e788254633"
+            ]
+        ]
+    },
+    {
+        "id": "1527a95da3beceac",
+        "type": "ui-button",
+        "z": "cbd48d2dfea25fb5",
+        "group": "900076f496d2fdf1",
+        "name": "Humidity OFF",
+        "label": "Humidity comparison: OFF",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 200,
+        "y": 200,
+        "wires": [
+            [
+                "154214e788254633"
+            ]
+        ]
+    },
+    {
+        "id": "d799590e02b401b2",
+        "type": "ui-button",
+        "z": "cbd48d2dfea25fb5",
+        "group": "900076f496d2fdf1",
+        "name": "Humidity ON",
+        "label": "Humidity comparison: ON",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "154214e788254633"
+            ]
+        ]
+    },
+    {
+        "id": "3bbe6fe30ddf36a9",
+        "type": "ui-template",
+        "z": "cbd48d2dfea25fb5",
+        "group": "3deb4ee8332fb389",
+        "page": "",
+        "ui": "",
+        "name": "Active settings",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div v-if=\"msg && msg.payload\">\n        <div v-for=\"(row, i) in msg.payload.rows\" :key=\"i\">\n            <b v-if=\"row[0]\">{{ row[0] }}:</b> {{ row[1] }}\n        </div>\n    </div>\n    <div v-else>Waiting for data…</div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e172e7e4ff4be438",
+        "type": "inject",
+        "z": "cbd48d2dfea25fb5",
+        "name": "Show settings at start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 60,
+        "wires": [
+            [
+                "154214e788254633"
+            ]
+        ]
+    },
+    {
+        "id": "154214e788254633",
+        "type": "function",
+        "z": "cbd48d2dfea25fb5",
+        "name": "Validate and save",
+        "func": "// 05 - Alert Configuration: validate dashboard input, save to global \"config\"\nconst defaults = { temp_threshold_c: 3, humidity_threshold_pct: 10, sensor_stale_s: 60, compare_humidity: true };\nconst current = Object.assign({}, defaults, global.get(\"config\") || {});\n\nconst rules = {\n    temp_threshold_c: { min: 0.5, max: 20, label: \"Temperature threshold (°C)\" },\n    humidity_threshold_pct: { min: 1, max: 50, label: \"Humidity threshold (percentage points)\" },\n    sensor_stale_s: { min: 10, max: 3600, label: \"Sensor stale limit (s)\" }\n};\n\nconst p = msg.payload;\nlet outcome = \"Showing current settings.\";\n\nif (typeof p === \"boolean\") {\n    current.compare_humidity = p;\n    global.set(\"config\", Object.assign({}, current));\n    outcome = \"Humidity comparison turned \" + (p ? \"on\" : \"off\") + \" at \" + new Date().toLocaleTimeString(\"en-GB\") + \".\";\n} else if (p && typeof p === \"object\" && !Array.isArray(p)) {\n    const next = Object.assign({}, current);\n    const errors = [];\n    for (const key of Object.keys(rules)) {\n        if (p[key] === undefined || p[key] === null || p[key] === \"\") continue;\n        const v = Number(p[key]);\n        const r = rules[key];\n        if (!isFinite(v) || v < r.min || v > r.max) {\n            errors.push(r.label + \" must be from \" + r.min + \" to \" + r.max + \".\");\n        } else {\n            next[key] = v;\n        }\n    }\n    if (errors.length) {\n        outcome = \"REJECTED, nothing saved. \" + errors.join(\" \");\n    } else {\n        global.set(\"config\", next);\n        Object.assign(current, next);\n        outcome = \"Saved at \" + new Date().toLocaleTimeString(\"en-GB\") + \".\";\n    }\n}\n\nmsg.payload = {\n    rows: [\n        [\"Temperature threshold\", \"±\" + current.temp_threshold_c + \" °C\"],\n        [\"Humidity threshold\", \"±\" + current.humidity_threshold_pct + \" percentage points\"],\n        [\"Sensor stale after\", current.sensor_stale_s + \" s\"],\n        [\"Humidity comparison\", current.compare_humidity ? \"On\" : \"Off\"],\n        [\"Last action\", outcome],\n        [\"\", \"Prototype demonstration values, not validated safety limits.\"]\n    ]\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 180,
+        "wires": [
+            [
+                "3bbe6fe30ddf36a9"
+            ]
+        ]
+    },
+    {
+        "id": "212afa0a9b925dd1",
+        "type": "inject",
+        "z": "e96e6538bfa785bb",
+        "name": "Refresh every 10 s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "3",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "fb9cbcef9296ea3d"
+            ]
+        ]
+    },
+    {
+        "id": "80da37cb64201f8c",
+        "type": "inject",
+        "z": "e96e6538bfa785bb",
+        "name": "Run next test case",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "1ba0800d1af240b6"
+            ]
+        ]
+    },
+    {
+        "id": "1ba0800d1af240b6",
+        "type": "function",
+        "z": "e96e6538bfa785bb",
+        "name": "Make test case",
+        "func": "const nowMs = Date.now();\nconst iso = (offS) => new Date(nowMs - offS * 1000).toISOString();\nconst sens = (t, h, age) => ({ temperature: t, humidity: h, timestamp: iso(age || 0), source: \"test\" });\nconst api = (t, h) => ({ ok: true, temperature: t, humidity: h, fetched_at: iso(0), observed_at: iso(0) });\nconst fc = (p, mm) => ({\n    ok: true, max_rain_probability_pct: p, total_rain_mm: mm, fetched_at: iso(0),\n    steps: [{ time: new Date(nowMs + 3 * 3600 * 1000).toISOString(), rain_probability_pct: p, rain_3h_mm: mm }]\n});\nconst bad = { ok: false, error: \"HTTP 401\", fetched_at: iso(0) };\n\nconst cases = [\n    { name: \"Extreme heat\", sensor: sens(39, 50), api: api(36, 60), forecast: fc(10, 0) },\n    { name: \"Hot and humid\", sensor: sens(33, 80), api: api(32, 78), forecast: fc(10, 0) },\n    { name: \"Comfortable, rain likely\", sensor: sens(24, 60), api: api(24, 62), forecast: fc(75, 12) },\n    { name: \"Cold\", sensor: sens(8, 50), api: api(9, 55), forecast: fc(5, 0) },\n    { name: \"Stale sensor, API fallback\", sensor: sens(30, 60, 600), api: api(29, 70), forecast: fc(40, 2) },\n    { name: \"No usable data\", sensor: sens(30, 60, 600), api: bad, forecast: bad }\n];\nconst n = context.get(\"n\") || 0;\ncontext.set(\"n\", n + 1);\nmsg.test = cases[n % cases.length];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "fb9cbcef9296ea3d"
+            ]
+        ]
+    },
+    {
+        "id": "fb9cbcef9296ea3d",
+        "type": "function",
+        "z": "e96e6538bfa785bb",
+        "name": "Build recommendations",
+        "func": "// 06 - Safety Recommendations: simple rule-based advice (prototype, not medical advice)\nconst T = {                       // prototype thresholds: adjust here\n    extreme_heat_c: 38, hot_c: 32, warm_c: 26, cool_c: 18, cold_c: 10,\n    hot_humid_c: 30, humid_pct: 70,\n    rain_high_pct: 60, rain_some_pct: 30, rain_heavy_mm: 10\n};\nconst cfg = Object.assign({ sensor_stale_s: 60, api_fetch_stale_s: 1800, compare_humidity: true },\n    global.get(\"config\") || {});\n\nconst isTest = !!msg.test;\nconst s = isTest ? msg.test.sensor : global.get(\"sensor_latest\");\nconst a = isTest ? msg.test.api : global.get(\"api_latest\");\nconst f = isTest ? msg.test.forecast : global.get(\"forecast_latest\");\nconst c = isTest ? null : global.get(\"comparison_latest\");\n\nconst now = Date.now();\nconst ageS = (iso) => iso ? Math.round((now - new Date(iso).getTime()) / 1000) : null;\nconst num = (v) => typeof v === \"number\" && isFinite(v);\nconst LEVELS = { INFO: 0, WARNING: 1, CRITICAL: 2 };\nconst items = [];\nconst add = (level, label, text) => items.push({ level, label, text });\n\nconst sensorFresh = !!s && num(s.temperature) && ageS(s.timestamp) !== null && ageS(s.timestamp) <= cfg.sensor_stale_s;\nconst apiFresh = !!a && a.ok === true && num(a.temperature) && ageS(a.fetched_at) !== null && ageS(a.fetched_at) <= cfg.api_fetch_stale_s;\nconst fcFresh = !!f && f.ok === true && ageS(f.fetched_at) !== null && ageS(f.fetched_at) <= cfg.api_fetch_stale_s;\n\nlet temp = null, hum = null, basis = null;\nif (sensorFresh) {\n    temp = s.temperature;\n    if (cfg.compare_humidity && num(s.humidity)) hum = s.humidity;\n    else if (apiFresh && num(a.humidity)) hum = a.humidity;\n    basis = \"local sensor\";\n} else if (apiFresh) {\n    temp = a.temperature;\n    hum = num(a.humidity) ? a.humidity : null;\n    basis = \"weather API (local sensor missing or stale)\";\n}\n\nif (temp === null) {\n    add(\"WARNING\", \"Status\", \"No recent temperature data, so no clothing or heat advice can be given.\");\n} else {\n    const tt = temp.toFixed(1) + \" °C\";\n    if (temp >= T.extreme_heat_c) {\n        add(\"CRITICAL\", \"Heat\", \"Extreme heat (\" + tt + \"). Avoid strenuous outdoor activity, stay in a cool place, drink water regularly, and check on others.\");\n    } else if (temp >= T.hot_c) {\n        add(\"WARNING\", \"Heat\", \"Hot (\" + tt + \"). Drink water regularly and take breaks in cool or shaded areas.\");\n    }\n    let clothing;\n    if (temp >= T.warm_c) clothing = \"Lightweight, breathable, light-coloured clothing.\";\n    else if (temp >= T.cool_c) clothing = \"Comfortable everyday clothing.\";\n    else if (temp >= T.cold_c) clothing = \"A light jacket or an extra layer.\";\n    else clothing = \"Warm layers.\";\n    add(\"INFO\", \"Clothing\", clothing);\n\n    if (hum !== null && temp >= T.hot_humid_c && hum >= T.humid_pct) {\n        add(\"WARNING\", \"Hot and humid\", \"Humidity is \" + hum.toFixed(0) + \" %, so sweat evaporates less easily. Reduce strenuous activity and watch for heat-related symptoms such as dizziness, headache or nausea.\");\n    }\n}\n\nif (!fcFresh) {\n    add(\"INFO\", \"Rain\", \"Forecast data is unavailable or outdated, so there is no rain advice.\");\n} else if (num(f.max_rain_probability_pct)) {\n    const peak = (f.steps || []).reduce((best, st) =>\n        (st.rain_probability_pct !== null && (best === null || st.rain_probability_pct > best.rain_probability_pct)) ? st : best, null);\n    const when = peak ? \" Peak chance around \" + new Date(peak.time).toLocaleTimeString(\"en-GB\", { hour: \"2-digit\", minute: \"2-digit\" }) + \".\" : \"\";\n    const p = f.max_rain_probability_pct;\n    if (p >= T.rain_high_pct || f.total_rain_mm >= T.rain_heavy_mm) {\n        add(\"WARNING\", \"Rain\", \"Rain is likely in the next 24 h (up to \" + p + \" %, about \" + f.total_rain_mm + \" mm in total). Carry an umbrella or raincoat.\" + when);\n    } else if (p >= T.rain_some_pct) {\n        add(\"INFO\", \"Rain\", \"Some chance of rain (up to \" + p + \" %). An umbrella may be useful.\" + when);\n    } else {\n        add(\"INFO\", \"Rain\", \"Low chance of rain in the next 24 h (up to \" + p + \" %).\");\n    }\n}\n\nif (c && c.status === \"MISMATCH\" && ageS(c.evaluated_at) !== null && ageS(c.evaluated_at) <= 30) {\n    add(\"INFO\", \"Local vs report\", \"Local readings differ noticeably from the weather report (see the comparison card). The advice above uses the \" + (basis || \"available data\") + \".\");\n}\n\nconst problems = [];\nif (!sensorFresh) problems.push(\"local sensor data is missing or stale\");\nif (!apiFresh) problems.push(\"current weather data is missing or outdated\");\nif (!fcFresh) problems.push(\"forecast data is missing or outdated\");\nif (problems.length) {\n    add(\"WARNING\", \"Data status\", \"Recommendations may be outdated: \" + problems.join(\"; \") + \".\");\n}\n\nitems.sort((x, y) => LEVELS[y.level] - LEVELS[x.level]);\nconst top = items.length ? items[0].level : \"INFO\";\nconst basisText = temp === null ? \"no recent data\"\n    : basis + \" (\" + temp.toFixed(1) + \" °C\" + (hum !== null ? \", \" + hum.toFixed(0) + \" % RH\" : \"\") + \")\";\n\nconst rows = [[\"Based on\", basisText]];\nitems.forEach((i) => rows.push([i.label, \"[\" + i.level + \"] \" + i.text]));\nrows.push([\"\", \"UV index and air quality are not measured by this prototype. General guidance from simple rules, not medical advice.\"]);\nrows.push([\"Updated\", new Date(now).toLocaleTimeString(\"en-GB\")]);\nif (isTest) rows.unshift([\"TEST CASE\", msg.test.name]);\n\nmsg.payload = { level: top, rows: rows };\nif (isTest) return [null, msg];\nglobal.set(\"recommendations_latest\", msg.payload);\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "999ac08d0a0f806d"
+            ],
+            [
+                "48b7839ba5665071"
+            ]
+        ]
+    },
+    {
+        "id": "48b7839ba5665071",
+        "type": "debug",
+        "z": "e96e6538bfa785bb",
+        "name": "Recommendation test",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "999ac08d0a0f806d",
+        "type": "ui-template",
+        "z": "e96e6538bfa785bb",
+        "group": "8f13d50ac9bd99da",
+        "page": "",
+        "ui": "",
+        "name": "Recommendations",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div v-if=\"msg && msg.payload\">\n        <div :style=\"{ fontWeight: 'bold', fontSize: '1.2em',\n         color: msg.payload.level === 'CRITICAL' ? '#b91c1c' :\n                (msg.payload.level === 'WARNING' ? '#b45309' : '#15803d') }\">\n            Highest alert level: {{ msg.payload.level }}\n        </div>\n        <div v-for=\"(row, i) in msg.payload.rows\" :key=\"i\">\n            <b v-if=\"row[0]\">{{ row[0] }}:</b> {{ row[1] }}\n        </div>\n    </div>\n    <div v-else>Waiting for data…</div>\n</template>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    }
+]
