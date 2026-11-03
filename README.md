@@ -11,3 +11,5 @@ recommendations on a dashboard.
 - [ ] Phase 3: Node-RED, weather API and mismatch detector
 - [ ] Phase 4: Recommendations and dashboard
 - [ ] Phase 5: Final testing and documentation
+
+Setup and run instructions: [docs/SETUP.md](docs/SETUP.md)
